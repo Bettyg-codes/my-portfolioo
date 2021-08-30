@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -18,21 +15,65 @@
     <title>My portfolio</title>
   </head>
   <body>
-    <!-------START OF NAVBAR CODE------->
-    <nav>
-      <a class="nav-content nav-logo" href="index.html">Bethel Girma Bahta</a>
-      <div class="navigation-links">
-        <a class="nav-content nav-link" href="index.html">Contact</a>
-        <a class="nav-content nav-link" href="index.html">Work</a>
-        <a class="nav-content nav-link" href="index.html">About</a>
-        <a class="nav-content nav-link" href="index.html">Home</a>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bethel Girma Bahta</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </nav> 
 
     <!-------END OF NAVBAR CODE------->
 
     <!-------START OF WORK SECTION CODE------->
 
+    <section class="my-work bg-dark" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+
+      <div class="portfolio">
+          <!--Portfolio item 01-->
+          <a href="portfolio-item.html" class="portfolio__item">
+              <img src="images/weather.png" alt="weather application" class ="portfolio__img img-fluid">
+          </a>
+
+          <!--Portfolio item 02-->
+          <a href="#" class="portfolio__item">
+              <img src="images/yoga.png" alt="yoga application" class ="portfolio__img img-fluid">
+          </a>
+
+          <!--Portfolio item 03-->
+          <a href="#" class="portfolio__item">
+              <img src="images/yogurt.png" alt="yogurt application" class ="portfolio__img img-fluid">
+          </a>
+           <!--Portfolio item 04-->
+           <a href="#" class="portfolio__item">
+            <img src="images/yogurt.png" alt="yogurt application" class ="portfolio__img img-fluid">
+        </a>
+      </div>
+  </section>
+
+
     <!-------END OF WORK SECTION CODE------->
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
